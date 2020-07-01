@@ -23,5 +23,5 @@ CREATE TABLE `wp_uwp_form_extras` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 LOCK TABLES `wp_uwp_form_extras` WRITE;
-INSERT INTO `wp_uwp_form_extras` VALUES ('1','register','text','first_name','1','0','0','','','','','','','','','','','','',''), ('2','register','text','last_name','2','0','0','','','','','','','','','','','','',''), ('3','register','text','username','3','1','0','','','','','','','','','','','','',''), ('4','register','email','email','4','1','0','','','','','','','','','','','','',''), ('5','register','password','password','5','0','0','','','','','','','','','','','','','');
+INSERT INTO `wp_uwp_form_extras` VALUES ('1','register','text','first_name','1','0','0','0','0','0','','0','','','0','0','0','','',''), ('2','register','text','last_name','2','0','0','0','0','0','','0','','','0','0','0','','',''), ('3','register','text','username','3','1','0','0','0','0','','0','','','0','0','0','','',''), ('4','register','email','email','4','1','0','0','0','0','','0','','','0','0','0','','',''), ('5','register','password','password','5','0','0','0','0','0','','0','','','0','0','0','','','');
 UNLOCK TABLES;
