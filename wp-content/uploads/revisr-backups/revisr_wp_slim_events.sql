@@ -1,17 +1,4 @@
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 DROP TABLE IF EXISTS `wp_slim_events`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `wp_slim_events` (
   `event_id` int(10) NOT NULL AUTO_INCREMENT,
   `type` tinyint(3) unsigned DEFAULT '0',
@@ -25,20 +12,6 @@ CREATE TABLE `wp_slim_events` (
   KEY `fk_wp_slim_events_id` (`id`),
   CONSTRAINT `fk_wp_slim_events_id` FOREIGN KEY (`id`) REFERENCES `wp_slim_stats` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
 LOCK TABLES `wp_slim_events` WRITE;
-/*!40000 ALTER TABLE `wp_slim_events` DISABLE KEYS */;
-INSERT INTO `wp_slim_events` VALUES (1,0,NULL,'Type:click,Button:left,ID:user_login','1227,382',2,1594370393),(2,0,NULL,'Type:click,Button:left,ID:user_pass','1228,471',2,1594370398),(3,0,NULL,'Type:click,Button:left,ID:wp-submit','1383,524',2,1594370398),(4,0,NULL,'Type:click,Button:left','1369,82',6,1594659232);
-/*!40000 ALTER TABLE `wp_slim_events` ENABLE KEYS */;
+INSERT INTO `wp_slim_events` VALUES ('1','0','','Type:click,Button:left,ID:user_login','1227,382','2','1594370393'), ('2','0','','Type:click,Button:left,ID:user_pass','1228,471','2','1594370398'), ('3','0','','Type:click,Button:left,ID:wp-submit','1383,524','2','1594370398'), ('4','0','','Type:click,Button:left','1369,82','6','1594659232');
 UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-

@@ -1,17 +1,4 @@
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 DROP TABLE IF EXISTS `wp_uwp_form_fields`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `wp_uwp_form_fields` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `form_type` varchar(100) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
@@ -46,20 +33,6 @@ CREATE TABLE `wp_uwp_form_fields` (
   `validation_msg` text COLLATE utf8mb4_unicode_520_ci,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
 LOCK TABLES `wp_uwp_form_fields` WRITE;
-/*!40000 ALTER TABLE `wp_uwp_form_fields` DISABLE KEYS */;
-INSERT INTO `wp_uwp_form_fields` VALUES (1,'login','VARCHAR','text','text','Username','',NULL,'username','',1,'','1','','0','1','0','0','1','0','0','0','','','','','','','','',''),(2,'login','VARCHAR','password','password','Password','',NULL,'password','',2,'','1','','0','1','0','0','1','0','0','0','','','','','','','','',''),(3,'forgot','VARCHAR','email','email','Email','',NULL,'email','',3,'','1','','0','1','0','0','1','0','0','0','','','','','','','','',''),(4,'account','VARCHAR','text','text','First Name','',NULL,'first_name','',4,'','1','','0','1','0','1','1','1','1','0','','','','','','uwp-half uwp-half-left','','',''),(5,'account','VARCHAR','text','text','Last Name','',NULL,'last_name','',5,'','1','','0','1','0','1','1','1','1','0','','','','','','uwp-half uwp-half-right','','',''),(6,'account','VARCHAR','text','text','Username','',NULL,'username','',6,'','1','','0','1','0','1','1','1','1','1','','','','','','','','',''),(7,'account','VARCHAR','text','text','Display Name','',NULL,'display_name','',7,'','1','','0','1','0','1','0','0','1','0','','','','','','','','',''),(8,'account','VARCHAR','email','email','Email','',NULL,'email','',8,'','1','','0','1','0','0','1','1','1','0','','','','','','','','',''),(9,'account','TEXT','textarea','textarea','Bio','',NULL,'bio','',9,'','1','','0','0','0','1','1','0','1','0','','[profile_side],[users]','','','','','','',''),(10,'account','VARCHAR','password','password','Password','',NULL,'password','',10,'','1','','0','1','0','0','1','1','0','1','','','','a:1:{s:16:\"confirm_password\";s:1:\"1\";}','','','','',''),(11,'avatar','TEXT','file','file','Avatar','',NULL,'avatar','',11,'','1','','0','1','0','0','1','0','0','0','','','','','','','','',''),(12,'banner','TEXT','file','file','Banner','',NULL,'banner','',12,'','1','','0','1','0','0','1','0','0','0','','','','','','','','',''),(13,'change','VARCHAR','password','password','Old Password','',NULL,'old_password','',13,'','1','','0','1','0','0','1','0','0','0','','','','','','','','',''),(14,'change','VARCHAR','password','password','New Password','',NULL,'password','',14,'','1','','0','1','0','0','1','0','0','0','','','','','','','','',''),(15,'change','VARCHAR','password','password','Confirm Password','',NULL,'confirm_password','',15,'','1','','0','1','0','0','1','0','0','0','','','','','','','','',''),(16,'reset','VARCHAR','password','password','Password','',NULL,'password','',16,'','1','','0','1','0','0','1','0','0','0','','','','','','','','',''),(17,'reset','VARCHAR','password','password','Confirm Password','',NULL,'confirm_password','',17,'','1','','0','1','0','0','1','0','0','0','','','','','','','','','');
-/*!40000 ALTER TABLE `wp_uwp_form_fields` ENABLE KEYS */;
+INSERT INTO `wp_uwp_form_fields` VALUES ('1','login','VARCHAR','text','text','Username','','','username','','1','','1','','0','1','0','0','1','0','0','0','','','','','','','','',''), ('2','login','VARCHAR','password','password','Password','','','password','','2','','1','','0','1','0','0','1','0','0','0','','','','','','','','',''), ('3','forgot','VARCHAR','email','email','Email','','','email','','3','','1','','0','1','0','0','1','0','0','0','','','','','','','','',''), ('4','account','VARCHAR','text','text','First Name','','','first_name','','4','','1','','0','1','0','1','1','1','1','0','','','','','','uwp-half uwp-half-left','','',''), ('5','account','VARCHAR','text','text','Last Name','','','last_name','','5','','1','','0','1','0','1','1','1','1','0','','','','','','uwp-half uwp-half-right','','',''), ('6','account','VARCHAR','text','text','Username','','','username','','6','','1','','0','1','0','1','1','1','1','1','','','','','','','','',''), ('7','account','VARCHAR','text','text','Display Name','','','display_name','','7','','1','','0','1','0','1','0','0','1','0','','','','','','','','',''), ('8','account','VARCHAR','email','email','Email','','','email','','8','','1','','0','1','0','0','1','1','1','0','','','','','','','','',''), ('9','account','TEXT','textarea','textarea','Bio','','','bio','','9','','1','','0','0','0','1','1','0','1','0','','[profile_side],[users]','','','','','','',''), ('10','account','VARCHAR','password','password','Password','','','password','','10','','1','','0','1','0','0','1','1','0','1','','','','a:1:{s:16:\"confirm_password\";s:1:\"1\";}','','','','',''), ('11','avatar','TEXT','file','file','Avatar','','','avatar','','11','','1','','0','1','0','0','1','0','0','0','','','','','','','','',''), ('12','banner','TEXT','file','file','Banner','','','banner','','12','','1','','0','1','0','0','1','0','0','0','','','','','','','','',''), ('13','change','VARCHAR','password','password','Old Password','','','old_password','','13','','1','','0','1','0','0','1','0','0','0','','','','','','','','',''), ('14','change','VARCHAR','password','password','New Password','','','password','','14','','1','','0','1','0','0','1','0','0','0','','','','','','','','',''), ('15','change','VARCHAR','password','password','Confirm Password','','','confirm_password','','15','','1','','0','1','0','0','1','0','0','0','','','','','','','','',''), ('16','reset','VARCHAR','password','password','Password','','','password','','16','','1','','0','1','0','0','1','0','0','0','','','','','','','','',''), ('17','reset','VARCHAR','password','password','Confirm Password','','','confirm_password','','17','','1','','0','1','0','0','1','0','0','0','','','','','','','','','');
 UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
